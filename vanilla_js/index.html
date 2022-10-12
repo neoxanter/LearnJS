@@ -7,10 +7,12 @@
     <title>Vanilla JS</title>
   </head>
   <body>
-    <button id="my-button" onclick="сhangeButtonText()">Click me</button>
+    <button id="my-button" onclick="сhangeButtonText('my-button')">
+      Click me
+    </button>
     <script>
-      function сhangeButtonText() {
-        const myButton = document.getElementById('my-button')
+      function сhangeButtonText(id) {
+        const myButton = document.getElementById(id)
         myButton.innerHTML = 'It is not React)))'
       }
     </script>
