@@ -4,10 +4,12 @@ for (i = 0; i < numberOfDrumButtons; i++) {
   document.querySelectorAll('.drum')[i].addEventListener('click', function () {
     let buttonInnerHTML = this.innerHTML
     makeSound(buttonInnerHTML)
+    buttonAnimation(buttonInnerHTML)
   })
 
   document.addEventListener('keypress', function (event) {
     makeSound(event.key)
+    buttonAnimation(event.key)
   })
 
   function makeSound(key) {
@@ -50,5 +52,9 @@ for (i = 0; i < numberOfDrumButtons; i++) {
       default:
         break
     }
+  }
+
+  function buttonAnimation(currentKey) {
+    let activeButton = document.querySelector('.' + currentKey)
   }
 }
