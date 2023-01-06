@@ -6,7 +6,9 @@ for (i = 0; i < numberOfDrumButtons; i++) {
     makeSound(buttonInnerHTML)
   })
 
-  document.addEventListener('keypress', function (event) {})
+  document.addEventListener('keypress', function (event) {
+    makeSound(event.key)
+  })
 
   function makeSound(key) {
     switch (key) {
