@@ -3,8 +3,13 @@ const numberOfDrumButtons = document.querySelectorAll('.drum').length
 for (i = 0; i < numberOfDrumButtons; i++) {
   document.querySelectorAll('.drum')[i].addEventListener('click', function () {
     let buttonInnerHTML = this.innerHTML
+    makeSound(buttonInnerHTML)
+  })
 
-    switch (buttonInnerHTML) {
+  document.addEventListener('keypress', function (event) {})
+
+  function makeSound(key) {
+    switch (key) {
       case 'w':
         const tom1 = new Audio('sounds/tom-1.mp3')
         tom1.play()
@@ -43,5 +48,5 @@ for (i = 0; i < numberOfDrumButtons; i++) {
       default:
         break
     }
-  })
+  }
 }
