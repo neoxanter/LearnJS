@@ -6,3 +6,17 @@ body {
     margin: 0;
     background-color: #F3F6FD;
 }
+
+.app {
+    display: flex;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.panel {
+    background: white;
+    min-height: 100vh;
+    padding: 30px;
+}
