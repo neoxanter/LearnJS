@@ -45,6 +45,22 @@ body {
     cursor: pointer;
 }
 
+.menu__item:hover {
+    background: #6A6AFB;
+}
+
+.menu__item:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.menu__item_active {
+    background: #5051F9;
+}
+
+.menu__item_active img {
+    filter: brightness(0) invert(1);
+}
+
 .menu__add {
     background: none;
     border: 1px solid #CAD5FF;
@@ -52,4 +68,8 @@ body {
     height: 45px;
     width: 45px;
     cursor: pointer;
+}
+
+.menu__add:hover {
+    background: #EFF2FF;
 }
