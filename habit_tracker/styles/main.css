@@ -20,3 +20,15 @@ body {
     min-height: 100vh;
     padding: 30px;
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
