@@ -25,10 +25,31 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
 }
 
 .menu__list {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
+}
+
+.menu__item {
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0 8px 14px rgba(62, 107, 224, 0.12);
+    border: none;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.menu__add {
+    background: none;
+    border: 1px solid #CAD5FF;
+    border-radius: 14px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
 }
