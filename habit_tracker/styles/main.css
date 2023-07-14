@@ -176,6 +176,12 @@ input {
     border-radius: 9px;
     padding: 12px 20px;
     flex: 1;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #8899A8;
 }
 
 .habit__form {
@@ -183,4 +189,15 @@ input {
     gap: 15px;
     width: 100%;
     padding: 0 25px;
+    position: relative;
+}
+
+.input_icon {
+    padding-left: 45px;
+}
+
+.input__icon {
+    position: absolute;
+    top: 10px;
+    left: 45px;
 }
