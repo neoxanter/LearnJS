@@ -73,3 +73,13 @@ body {
 .menu__add:hover {
     background: #EFF2FF;
 }
+
+.content {
+    min-width: 900px;
+    padding: 45px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
