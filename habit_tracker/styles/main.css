@@ -139,6 +139,7 @@ main {
     border-radius: 10px;
     display: flex;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 .habit__day {
@@ -147,6 +148,7 @@ main {
     border-radius: 10px 0 0 10px;
     border-right: 1px solid #E7EBFB;
     padding: 20px 40px;
+    min-width: 150px;
 }
 
 .habit__comment {
@@ -180,5 +182,5 @@ input {
     display: flex;
     gap: 15px;
     width: 100%;
-    padding: 0px 25px;
+    padding: 0 25px;
 }
