@@ -167,3 +167,18 @@ main {
 .habit__delete:hover {
     background: #EFF2FF;
 }
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #E7EBFB;
+    border-radius: 9px;
+    padding: 12px 20px;
+    flex: 1;
+}
+
+.habit__form {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding: 0px 25px;
+}
