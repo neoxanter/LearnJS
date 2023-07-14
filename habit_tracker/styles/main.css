@@ -188,7 +188,7 @@ input::placeholder {
     display: flex;
     gap: 15px;
     width: 100%;
-    padding: 0 25px;
+    padding: 0 10px 0 25px;
     position: relative;
 }
 
@@ -200,4 +200,18 @@ input::placeholder {
     position: absolute;
     top: 10px;
     left: 45px;
+}
+
+button {
+    background: #EDECFE;
+    border-radius: 9px;
+    border: none;
+    font-size: 13px;
+    color: #5051F9;
+    padding: 14px 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #DCDAFF;
 }
