@@ -7,7 +7,11 @@ const loadData = () => {
     const habitString = localStorage.getItem(HABIT_KEY)
     const habitArray = JSON.parse(habitString)
 
-if (Array.isArray(habitArray)) {
-    habits = habitArray
+    if (Array.isArray(habitArray)) {
+        habits = habitArray
+    }
 }
+
+const saveData = () => {
+    localStorage.setItem(HABIT_KEY, JSON.stringify(habits))
 }
