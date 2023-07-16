@@ -16,6 +16,15 @@ const saveData = () => {
     localStorage.setItem(HABIT_KEY, JSON.stringify(habits))
 }
 
+const rerenderMenu = (activeHabitId) => {
+    if (!activeHabitId) {
+        return;
+    }
+    for (const habit of habits) {
+
+    }
+}
+
 (() => {
     loadData()
 })()
