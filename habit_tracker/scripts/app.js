@@ -25,6 +25,11 @@ const rerenderMenu = (activeHabit) => {
         if (!existed) {
 
         }
+        if (activeHabit.id === habit.id) {
+            existed.classList.add('menu__item_active')
+        } else {
+            existed.classList.remove('menu__item_active')
+        }
     }
 }
 
