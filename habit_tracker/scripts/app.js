@@ -16,12 +16,15 @@ const saveData = () => {
     localStorage.setItem(HABIT_KEY, JSON.stringify(habits))
 }
 
-const rerenderMenu = (activeHabitId) => {
-    if (!activeHabitId) {
+const rerenderMenu = (activeHabit) => {
+    if (!activeHabit) {
         return;
     }
     for (const habit of habits) {
+        let existed = document.querySelector(`[menu-habit-id="${habit.id}"]`)
+        if (!existed) {
 
+        }
     }
 }
 
