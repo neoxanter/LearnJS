@@ -21,7 +21,7 @@ const rerenderMenu = (activeHabit) => {
         return;
     }
     for (const habit of habits) {
-        let existed = document.querySelector(`[menu-habit-id="${habit.id}"]`)
+        const existed = document.querySelector(`[menu-habit-id="${habit.id}"]`)
         if (!existed) {
             const element = document.createElement('button')
             element.setAttribute('menu-habit-id', habit.id)
