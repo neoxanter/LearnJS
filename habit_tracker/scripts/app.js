@@ -26,7 +26,7 @@ const rerenderMenu = (activeHabit) => {
             const element = document.createElement('button')
             element.setAttribute('menu-habit-id', habit.id)
             element.classList.add('menu__item')
-            element.innerHTML = `<img src="./images/${habit.icon}.svg" alt="${habit.id}" menu-habit-id="1" />`
+            element.innerHTML = `<img src="./images/${habit.icon}.svg" alt="${habit.id}" />`
         }
         if (activeHabit.id === habit.id) {
             existed.classList.add('menu__item_active')
@@ -42,4 +42,5 @@ const rerender = (activeHabitId) => {
 
 (() => {
     loadData()
+    rerender(habits[0].id)
 })()
