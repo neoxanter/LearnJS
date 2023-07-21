@@ -23,7 +23,10 @@ const rerenderMenu = (activeHabit) => {
     for (const habit of habits) {
         let existed = document.querySelector(`[menu-habit-id="${habit.id}"]`)
         if (!existed) {
-
+            const element = document.createElement('button')
+            element.setAttribute('menu-habit-id', habit.id)
+            element.classList.add('menu__item')
+            element.innerHTML = `<img src="./images/${habit.icon}.svg" alt="${habit.id}" menu-habit-id="1" />`
         }
         if (activeHabit.id === habit.id) {
             existed.classList.add('menu__item_active')
