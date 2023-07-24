@@ -46,4 +46,4 @@ const rerender = (activeHabitId) => {
 (() => {
     loadData()
     rerender(habits[0].id)
-})()
+})()}
