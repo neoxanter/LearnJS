@@ -3,6 +3,10 @@
 let habits = []
 const HABIT_KEY = 'HABIT_KEY'
 
+const page = {
+    menu: document.querySelector('menu__list')
+}
+
 const loadData = () => {
     const habitString = localStorage.getItem(HABIT_KEY)
     const habitArray = JSON.parse(habitString)
@@ -29,6 +33,7 @@ const rerenderMenu = (activeHabit) => {
             element.innerHTML = `<img src="./images/${habit.icon}.svg" alt="${habit.id}" />`
             if (activeHabit.id === habit.id) {
                 existed.classList.add('menu__item_active')
+                page.menu.appendChild(element)
             continue
         }
         if (activeHabit.id === habit.id) {
