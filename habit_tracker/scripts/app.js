@@ -40,7 +40,7 @@ const rerenderMenu = (activeHabit) => {
             if (activeHabit.id === habit.id) {
                 element.classList.add('menu__item_active')
             }
-                page.menu.appendChild(element)
+            page.menu.appendChild(element)
             continue
         }
         if (activeHabit.id === habit.id) {
@@ -52,7 +52,10 @@ const rerenderMenu = (activeHabit) => {
 }
 
 function renderHead(activeHabit) {
-
+    if (!activeHabit) {
+        return;
+    }
+    page.header.h1.innerText = activeHabit.name
 }
 
 const rerender = (activeHabitId) => {
