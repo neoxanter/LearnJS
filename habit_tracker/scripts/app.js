@@ -46,9 +46,14 @@ const rerenderMenu = (activeHabit) => {
     }
 }
 
+function renderHead(activeHabit) {
+
+}
+
 const rerender = (activeHabitId) => {
     const activeHabit = habits.find(habit => habit.id === activeHabitId)
-    rerenderMenu(activeHabitId)
+    rerenderMenu(activeHabit)
+    renderHead(activeHabit)
 }
 
 (() => {

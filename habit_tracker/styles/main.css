@@ -124,7 +124,6 @@ h1 {
 
 .progress__cover-bar {
     position: absolute;
-    width: 50%;
     height: 5px;
     background: #5051F9;
     border-radius: 4px;
