@@ -4,12 +4,12 @@ let habits = []
 const HABIT_KEY = 'HABIT_KEY'
 
 const page = {
-    menu: document.querySelector('menu__list')
+    menu: document.querySelector('.menu__list')
 }
 
 const loadData = () => {
-    const habitString = localStorage.getItem(HABIT_KEY)
-    const habitArray = JSON.parse(habitString)
+    const habitsString = localStorage.getItem(HABIT_KEY)
+    const habitArray = JSON.parse(habitsString)
 
     if (Array.isArray(habitArray)) {
         habits = habitArray
