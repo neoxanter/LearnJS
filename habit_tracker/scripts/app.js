@@ -4,7 +4,12 @@ let habits = []
 const HABIT_KEY = 'HABIT_KEY'
 
 const page = {
-    menu: document.querySelector('.menu__list')
+    menu: document.querySelector('.menu__list'),
+    header: {
+        h1: document.querySelector('.h1'),
+        progressPercent: document.querySelector('.progress__percent'),
+        progressCoverBar: document.querySelector('.progress__cover-bar')
+    }
 }
 
 const loadData = () => {
