@@ -56,6 +56,8 @@ function renderHead(activeHabit) {
         return;
     }
     page.header.h1.innerText = activeHabit.name
+    const progress = activeHabit.days.length / activeHabit.target > 1 ? 100 : activeHabit.days.length / activeHabit.target * 100
+
 }
 
 const rerender = (activeHabitId) => {
