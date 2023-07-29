@@ -57,7 +57,8 @@ function renderHead(activeHabit) {
     }
     page.header.h1.innerText = activeHabit.name
     const progress = activeHabit.days.length / activeHabit.target > 1 ? 100 : activeHabit.days.length / activeHabit.target * 100
-
+    page.header.progressPercent.innerText = progress.toFixed(0) + '%'
+    page.header.progressCoverBar.setAttribute('style'. `width: ${progress}%`)
 }
 
 const rerender = (activeHabitId) => {
